@@ -4,14 +4,12 @@ class Person{
 		this.name = name;
 		this.age = age;
 	}
-	greet(){
+	cangreet(){
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	}
 }
 
-
-
-	class Employee extends Person{
+class Employee extends Person{
 		constructor(name, age, jobTitle){
 			super(name, age);
 			this.jobTitle = jobTitle;
@@ -20,9 +18,8 @@ class Person{
 			console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`)
 		}
 	}
-
 let person = new Person('Alice', 25);
-person.greet();
+person.cangreet();
 
 let employee = new Employee('Bob', 30, 'Manager');
 employee.jobGreet();
