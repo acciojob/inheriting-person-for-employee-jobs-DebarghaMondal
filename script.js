@@ -4,7 +4,7 @@ class Person{
 		this.name = name;
 		this.age = age;
 	}
-	cangreet(){
+	greet(){
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	}
 }
@@ -19,7 +19,7 @@ class Employee extends Person{
 		}
 	}
 let person = new Person('Alice', 25);
-person.cangreet();
+person.greet();
 
 let employee = new Employee('Bob', 30, 'Manager');
 employee.jobGreet();
