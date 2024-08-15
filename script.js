@@ -1,5 +1,4 @@
 // complete this js code
-function Person(name, age) {
 class Person{
 	constructor(name, age){
 		this.name = name;
@@ -9,9 +8,9 @@ class Person{
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 	}
 }
-}
 
-function Employee(name, age, jobTitle) {
+
+
 	class Employee extends Person{
 		constructor(name, age, jobTitle){
 			super(name, age);
@@ -21,7 +20,6 @@ function Employee(name, age, jobTitle) {
 			console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`)
 		}
 	}
-}
 
 let person = new Person('Alice', 25);
 person.greet();
